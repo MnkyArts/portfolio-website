@@ -1,7 +1,29 @@
 "use client";
-import React from "react";
+import React, {useEffect} from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+
+const RotateText = () => {
+  useEffect(() => {
+    const text = document.querySelector('.text p');
+    if (text) {
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) => `<span style="transform:rotate(${i * 3.9}deg)">${char}</span>`
+        )
+        .join("");
+    }
+  }, []);
+
+  return (
+    <div className="text text-white">
+      <p>
+        Web Developer – Graphic Designer – Backend Developer –
+      </p>
+    </div>
+  );
+};
 
 const Hero = () => {
   return (
@@ -59,7 +81,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#0F172A] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full w-[var(--d-outer)] h-[var(--d-outer)] lg:w-[var(--d-outer)] lg:h-[var(--d-outer)] relative">
+          <RotateText />
             <Image
               src="/img/avatar.jpg"
               className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
