@@ -11,9 +11,8 @@ const Hero = () => {
           <h1 className="text-[#75ff69] mb-4 text-4xl lg:text-6xl font-extrabold">
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Hey there!👋",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 "¡Hola!👋",
                 1000,
                 "Salut!👋",

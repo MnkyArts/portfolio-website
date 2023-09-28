@@ -16,7 +16,7 @@ const links = [
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#0F172A]">
+    <nav className="fixed top-0 left-0 right-0 z-10">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href={"/"}

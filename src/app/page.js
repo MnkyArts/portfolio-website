@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#0B1120]">
       <Navbar />
-      <div className="container mt-24 mx-auto p-24">
+      <div className="bg-[url('/img/bg.jpg')] mx-auto p-24 lg:p-64">
         <Hero />
       </div>
     </main>
