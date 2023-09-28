@@ -8,7 +8,7 @@ const Hero = () => {
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center">
-          <h1 className="text-[#75ff69] mb-4 text-4xl lg:text-6xl font-extrabold">
+          <h1 className="bg-gradient-to-r from-green-400 via-teal-300 to-blue-400 to-white mb-4 text-4xl lg:text-6xl font-extrabold bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
                 "Hey there!👋",
