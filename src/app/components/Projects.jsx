@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const About = () => {
+export const Projects = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12 relative">
@@ -43,23 +43,9 @@ const About = () => {
             My Projects
           </button>
         </div>
-        <Image
-          src="/img/rectangle.svg"
-          className="absolute -left-96 -top-32 z-0 left"
-          alt="gradient rectangle"
-          width={600}
-          height={600}
-        />
-        <Image
-          src="/img/circle.svg"
-          className="absolute -right-96 -bottom-48 z-0"
-          alt="gradient circle"
-          width={600}
-          height={600}
-        />
       </div>
     </section>
   );
 };
 
-export default About;
+export default Projects;

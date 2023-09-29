@@ -58,7 +58,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        <div className="col-span-5 place-self-end mt-4 lg:mt-0">
           <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <div className="text text-white">
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">

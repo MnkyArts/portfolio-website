@@ -16,8 +16,8 @@ const links = [
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 backdrop-blur-md border-b-2 border-b-[#e5e7eb1c]">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="fixed top-0 left-0 right-0 z-20 backdrop-blur-md border-b-2 border-b-[#e5e7eb1c]">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-10 py-4">
         <Link
           href={"/"}
           className="flex items-center text-3xl text-white font-semibold"
