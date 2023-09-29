@@ -4,8 +4,8 @@ import Image from "next/image";
 const About = () => {
   return (
     <section>
-        <div className="grid grid-cols-1 lg:grid-cols-12">
-            <div className="col-span-5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 relative">
+            <div className="col-span-5 mb-6 lg:mb-0 place-self-center lg:place-self-start">
                 <Image
                     src="/img/liam.jpeg"
                     className="rounded-2xl border-2 border-[#e5e7eb1c] shadow-[10px_10px_0px_0px_rgba(255,255,255,.10)]"
@@ -14,7 +14,7 @@ const About = () => {
                     height={600}
                 />
             </div>
-            <div className="col-span-7 place-self-center">
+            <div className="col-span-7 place-self-center text-center lg:text-left">
                 <h2 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
                     Liam Robinson
                 </h2>
@@ -25,6 +25,20 @@ const About = () => {
                     for your design needs.
                 </p>
             </div>
+            <Image
+                src="/img/rectangle.svg"
+                className="absolute -left-28 -top-20 z-0"
+                alt="gradient rectangle"
+                width={400}
+                height={400}
+            />
+            <Image
+                src="/img/circle.svg"
+                className="absolute -right-28 -bottom-20 z-0"
+                alt="gradient rectangle"
+                width={200}
+                height={200}
+            />
         </div>
     </section>
   )
