@@ -1,11 +1,28 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { useScroll, useSpring, useTransform, motion } from "framer-motion";
 
 const Hero = () => {
+  const target = React.useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: target,
+    offset: ["end end", "end start"],
+  });
+
+  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5], [1.5, 0]), {
+    stiffness: 150,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
-    <section>
+    <motion.section
+      ref={target}
+      style={{ opacity }}
+      className="bg-[url('/img/bg.jpg')] bg-no-repeat bg-cover mx-auto px-24 py-20 lg:py-52 lg:px-64 border-b-2 border-b-[#e5e7eb1c]"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center">
           <h1 className="bg-gradient-to-r from-green-400 via-teal-300 to-blue-400 mb-4 text-4xl lg:text-6xl font-extrabold bg-clip-text text-transparent">
@@ -87,7 +104,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
