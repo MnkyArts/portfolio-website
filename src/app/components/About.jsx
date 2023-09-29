@@ -7,11 +7,11 @@ const About = () => {
   const target = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: target,
-    offset: ["start end", "end start"],
+    offset: ["start end", "end end"],
   });
 
   const imgPos = useSpring(useTransform(scrollYProgress, [0, 0.5], [-735, 0]), {
-    stiffness: 100,
+    stiffness: 120,
     damping: 30,
     restDelta: 0.001,
   });
@@ -19,13 +19,13 @@ const About = () => {
   const textPos = useSpring(
     useTransform(scrollYProgress, [0, 0.5], [1100, 0]),
     {
-      stiffness: 100,
+      stiffness: 120,
       damping: 30,
       restDelta: 0.001,
     }
   );
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [-0.3, 1]);
 
   return (
     <section
