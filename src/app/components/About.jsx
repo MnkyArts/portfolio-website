@@ -7,7 +7,7 @@ const About = () => {
   const target = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: target,
-    offset: ["start end", "end end"],
+    offset: ["start end", "end center"],
   });
 
   const imgPos = useSpring(useTransform(scrollYProgress, [0, 0.5], [-735, 0]), {
