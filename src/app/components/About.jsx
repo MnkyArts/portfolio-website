@@ -25,12 +25,13 @@ const About = () => {
     }
   );
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [-0.3, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
   return (
     <section
       ref={target}
       className="mx-auto px-24 py-20 lg:py-52 lg:px-64 overflow-hidden"
+      id="about"
     >
       <motion.div
         style={{ opacity }}
@@ -73,10 +74,10 @@ const About = () => {
             </a>{" "}
             to see what I&apos;m currently working on.
           </p>
-          <button className="bg-green-400 hover:bg-transparent text-white hover:text-green-400 font-semibold py-3 px-8 border-2 border-transparent hover:border-green-400 rounded-full mr-5">
+          <button className="transition delay-15 duration-300 bg-green-400 hover:bg-transparent text-white hover:text-green-400 font-semibold py-3 px-8 border-2 border-transparent hover:border-green-400 rounded-full mr-5">
             Work with me
           </button>
-          <button className="bg-transparent hover:bg-green-400 text-green-400 font-semibold hover:text-white py-3 px-8 border-2 border-green-400 hover:border-transparent rounded-full">
+          <button className="transition delay-15 duration-300 bg-transparent hover:bg-blue-400 text-blue-400 font-semibold hover:text-white py-3 px-8 border-2 border-blue-400 hover:border-transparent rounded-full">
             My Projects
           </button>
         </motion.div>

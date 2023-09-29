@@ -7,8 +7,8 @@ import MenuOverlay from "./MenuOverlay";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const links = [
-  { href: "/", title: "Home" },
-  { href: "/about", title: "About" },
+  { href: "#start", title: "Home" },
+  { href: "#about", title: "About" },
   { href: "/projects", title: "Projects" },
   { href: "/contact", title: "Contact" },
 ];
