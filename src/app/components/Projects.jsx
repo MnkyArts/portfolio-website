@@ -46,6 +46,7 @@ export const Projects = () => {
         </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full grid-pattern bg-top [mask-image:linear-gradient(0deg,transparent,black)]"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/projectbg.jpg')] bg-no-repeat bg-cover [mask-image:linear-gradient(-180deg,transparent,black,transparent)]"></div>
     </section>
   );
 };
