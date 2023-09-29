@@ -8,7 +8,7 @@ const About = () => {
             <div className="col-span-5 mb-6 lg:mb-0 place-self-center lg:place-self-start">
                 <Image
                     src="/img/liam.jpeg"
-                    className="rounded-2xl border-2 border-[#e5e7eb1c] shadow-[10px_10px_0px_0px_rgba(255,255,255,.10)]"
+                    className="rounded-2xl border-2 relative z-10 border-[#e5e7eb1c] shadow-[10px_10px_0px_0px_rgba(255,255,255,.10)]"
                     alt="an image of Liam Robinson"
                     width={400}
                     height={600}
