@@ -35,7 +35,7 @@ const Hero = () => {
           </h1>
           <p className="text-lg lg:text-xl mb-6">
             I&apos;m Liam Robinson, a graphic designer and web developer from
-            Lüneburg, Germany, with 10+ years of experience. I excel in logo,
+            Lüneburg, Germany, with 8+ years of experience. I excel in logo,
             web, and print design, offering effective and efficient solutions
             for your design needs.
           </p>
