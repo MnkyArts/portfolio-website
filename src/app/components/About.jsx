@@ -21,6 +21,9 @@ const About = () => {
                 <p className="text-lg lg:text-xl mb-6">
                 Currently, I work as a web developer at a small advertising agency. In my free time, I work on various projects using Node.js, Next.js, and alt:V. Occasionally, you can also follow me on Twitch to see what I'm currently working on.
                 </p>
+                <button class="bg-transparent hover:bg-green-400 text-green-400 font-semibold hover:text-white py-3 px-8 border-2 border-green-400 hover:border-transparent rounded-full">
+                    Work with me
+                </button>
             </div>
             <Image
                 src="/img/rectangle.svg"
