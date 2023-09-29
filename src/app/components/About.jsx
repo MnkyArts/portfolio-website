@@ -14,15 +14,12 @@ const About = () => {
                     height={600}
                 />
             </div>
-            <div className="col-span-7 place-self-center text-center lg:text-left">
+            <div className="col-span-7 place-self-center text-center lg:text-left relative z-10">
                 <h2 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-                    Liam Robinson
+                    What do i do?
                 </h2>
                 <p className="text-lg lg:text-xl mb-6">
-                    I&apos;m Liam Robinson, a graphic designer and web developer from
-                    Lüneburg, Germany, with 10+ years of experience. I excel in logo,
-                    web, and print design, offering effective and efficient solutions
-                    for your design needs.
+                Currently, I work as a web developer at a small advertising agency. In my free time, I work on various projects using Node.js, Next.js, and alt:V. Occasionally, you can also follow me on Twitch to see what I'm currently working on.
                 </p>
             </div>
             <Image
