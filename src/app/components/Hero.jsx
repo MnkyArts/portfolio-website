@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect} from "react";
+import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
@@ -8,7 +8,7 @@ const Hero = () => {
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center">
-          <h1 className="bg-gradient-to-r from-green-400 via-teal-300 to-blue-400 to-white mb-4 text-4xl lg:text-6xl font-extrabold bg-clip-text text-transparent">
+          <h1 className="bg-gradient-to-r from-green-400 via-teal-300 to-blue-400 mb-4 text-4xl lg:text-6xl font-extrabold bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
                 "Hey there! 👋",
@@ -62,13 +62,18 @@ const Hero = () => {
           <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <div className="text text-white">
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path id="circlePath" d="
+                <path
+                  id="circlePath"
+                  d="
                     M 10, 50
                     a 40,40 0 1,1 80,0
                     40,40 0 1,1 -80,0
-                  "></path>
+                  "
+                ></path>
                 <text>
-                  <textPath href="#circlePath">Web Developer – Graphic Designer – Backend Developer – </textPath>
+                  <textPath href="#circlePath">
+                    Web Developer – Graphic Designer – Backend Developer –{" "}
+                  </textPath>
                 </text>
               </svg>
             </div>
