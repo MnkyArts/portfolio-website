@@ -5,22 +5,12 @@
 :root {
   --foreground-rgb: 148, 163, 184;
   --background: #0b1120;
-
-  --radius: 15vmin;
-  --frame-size: calc(var(--radius) / 3);
-  --d-outer: calc(var(--radius) * 2);
-  --d-inner: calc(var(--d-outer) - var(--frame-size));
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 148, 163, 184;
     --background: #0b1120;
-
-    --radius: 35vmin;
-    --frame-size: calc(var(--radius) / 3);
-    --d-outer: calc(var(--radius) * 2);
-    --d-inner: calc(var(--d-outer) - var(--frame-size));
   }
 }
 
@@ -43,9 +33,13 @@ body {
 		transform: rotate(0deg);
 	}
 }
-.text p span {
-	position: absolute;
-	left: 50%;
-	font-size: 1.2em;
-	transform-origin: 0 var(--radius);
+
+.text svg {
+	fill: transparent;
+}
+
+.text textPath {
+	fill: white;
+  font-size: 3.2px;
+  letter-spacing: 3px;
 }

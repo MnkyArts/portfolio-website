@@ -3,28 +3,6 @@ import React, {useEffect} from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
-const RotateText = () => {
-  useEffect(() => {
-    const text = document.querySelector('.text p');
-    if (text) {
-      text.innerHTML = text.innerText
-        .split("")
-        .map(
-          (char, i) => `<span style="transform:rotate(${i * 3.9}deg)">${char}</span>`
-        )
-        .join("");
-    }
-  }, []);
-
-  return (
-    <div className="text text-white">
-      <p>
-        Web Developer – Graphic Designer – Backend Developer –
-      </p>
-    </div>
-  );
-};
-
 const Hero = () => {
   return (
     <section>
@@ -33,19 +11,19 @@ const Hero = () => {
           <h1 className="bg-gradient-to-r from-green-400 via-teal-300 to-blue-400 to-white mb-4 text-4xl lg:text-6xl font-extrabold bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
-                "Hey there!👋",
+                "Hey there! 👋",
                 1000,
-                "¡Hola!👋",
+                "¡Hola! 👋",
                 1000,
-                "Salut!👋",
+                "Salut! 👋",
                 1000,
-                "Hallo!👋",
+                "Hallo! 👋",
                 1000,
-                "Ciao!👋",
+                "Ciao! 👋",
                 1000,
-                "Olá!👋",
+                "Olá! 👋",
                 1000,
-                "Привет!👋",
+                "Привет! 👋",
                 1000,
                 "こんにちは！👋",
                 1000,
@@ -81,8 +59,19 @@ const Hero = () => {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full w-[var(--d-outer)] h-[var(--d-outer)] lg:w-[var(--d-outer)] lg:h-[var(--d-outer)] relative">
-          <RotateText />
+          <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <div className="text text-white">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="circlePath" d="
+                    M 10, 50
+                    a 40,40 0 1,1 80,0
+                    40,40 0 1,1 -80,0
+                  "></path>
+                <text>
+                  <textPath href="#circlePath">Web Developer – Graphic Designer – Backend Developer – </textPath>
+                </text>
+              </svg>
+            </div>
             <Image
               src="/img/avatar.jpg"
               className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
