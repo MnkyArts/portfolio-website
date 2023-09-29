@@ -27,17 +27,17 @@ const About = () => {
             </div>
             <Image
                 src="/img/rectangle.svg"
-                className="absolute -left-28 -top-20 z-0"
+                className="absolute -left-96 -top-32 z-0 left"
                 alt="gradient rectangle"
-                width={400}
-                height={400}
+                width={600}
+                height={600}
             />
             <Image
                 src="/img/circle.svg"
-                className="absolute -right-28 -bottom-20 z-0"
-                alt="gradient rectangle"
-                width={200}
-                height={200}
+                className="absolute -right-96 -bottom-52 z-0"
+                alt="gradient circle"
+                width={600}
+                height={600}
             />
         </div>
     </section>

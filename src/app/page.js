@@ -10,7 +10,7 @@ export default function Home() {
       <div className="bg-[url('/img/bg.jpg')] bg-no-repeat bg-cover mx-auto p-24 lg:p-64 border-b-2 border-b-[#e5e7eb1c]">
         <Hero />
       </div>
-      <div className="mx-auto p-24 lg:p-64 border-b-2 border-b-[#e5e7eb1c]">
+      <div className="mx-auto p-24 lg:p-64 border-b-2 border-b-[#e5e7eb1c] overflow-hidden">
         <About />
       </div>
     </main>
