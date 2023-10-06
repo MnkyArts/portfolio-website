@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavLinks from "./NavLinks";
 import MenuOverlay from "./MenuOverlay";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -15,8 +15,23 @@ const links = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navBorderWidth, setnavBorderWidth] = useState("");
+  const [navBorderColor, setnavBorderColor] = useState("");
+
+  const listenScrollEvent = () => {
+    console.log(window.scrollY);
+    window.scrollY > 100 ? setnavBorderWidth("2px") : setnavBorderWidth("");
+    window.scrollY > 100 ? setnavBorderColor("#e5e7eb1c") : setnavBorderColor("");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-20 backdrop-blur-md">
+    <nav style={{borderBottomWidth: navBorderWidth, borderBottomColor: navBorderColor}} className="fixed top-0 left-0 right-0 z-20 backdrop-blur-md">
       <div className="flex flex-wrap items-center justify-between mx-auto px-52 py-4">
         <Link
           href={"/"}
