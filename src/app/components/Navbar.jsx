@@ -31,6 +31,7 @@ const Navbar = () => {
           />
           <h1>LIAM ROBINSON</h1>
         </Link>
+        <div className="hidden lg:block flex scroll-wrapper bg-[rgba(255,255,255,0.1)] rounded-full px-5 py-2 text-white text-sm"><div className="scroll-container"><p className="scroll-text">AVAILABLE FOR FREELANCE WORK</p><p className="scroll-text">AVAILABLE FOR FREELANCE WORK</p></div></div>
         <div className="block md:hidden">
           {!menuOpen ? (
             <button

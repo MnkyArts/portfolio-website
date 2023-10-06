@@ -19,18 +19,29 @@ body {
   background: var(--background);
 }
 
-.text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: rotateText 10s linear infinite;
+.scroll-wrapper {
+  overflow :hidden;
+  width: 250px;
+  display:inline-block;
+  white-space: nowrap;
 }
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
+
+.scroll-container {
+  width: 566px;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: move 2s infinite linear; /* set the time to what you want of course */
+}
+
+.scroll-container p {
+  margin:0;
+  padding-left:0px;
+  width:280px;
+}
+
+@keyframes move {
+  to {
+    transform: translateX(-50%);
   }
 }
 
