@@ -19,7 +19,6 @@ const Navbar = () => {
   const [navBorderColor, setnavBorderColor] = useState("");
 
   const listenScrollEvent = () => {
-    console.log(window.scrollY);
     window.scrollY > 100 ? setnavBorderWidth("2px") : setnavBorderWidth("");
     window.scrollY > 100 ? setnavBorderColor("#e5e7eb1c") : setnavBorderColor("");
   };
