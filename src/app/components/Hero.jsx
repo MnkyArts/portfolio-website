@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
     <section
-      className="bg-[url('/img/bg.jpg')] bg-no-repeat bg-cover mx-auto px-24 py-20 lg:py-52 lg:px-64 border-b-2 border-b-[#e5e7eb1c]"
+      className="bg-[url('/img/bg.jpg')] bg-no-repeat rounded-[2.5rem] bg-cover mx-auto lg:mt-32 lg:mx-52 px-20 py-20 lg:py-52 lg:px-52 border-2 border-[#e5e7eb1c]"
       id="start"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12">
