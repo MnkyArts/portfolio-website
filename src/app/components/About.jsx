@@ -30,7 +30,7 @@ const About = () => {
   return (
     <section
       ref={target}
-      className="mx-auto px-24 py-20 lg:py-52 lg:px-64 overflow-hidden"
+      className="mx-auto px-24 py-20 lg:py-52 lg:px-52 overflow-hidden"
       id="about"
     >
       <motion.div

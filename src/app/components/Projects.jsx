@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Projects = () => {
   return (
-    <section className="mx-auto px-24 py-20 lg:py-32 lg:px-64 border-b-2 border-b-[#e5e7eb1c] overflow-hidden relative">
+    <section className="mx-auto px-24 py-20 lg:py-32 lg:px-52 border-b-2 border-b-[#e5e7eb1c] overflow-hidden relative">
       <div className="absolute top-0 inset-x-0 h-[37.5rem] bg-gradient-to-b from-[#0a0e1a]"></div>
       <div className="grid grid-cols-1 lg:grid-cols-12 relative">
         <div className="col-span-5 mb-6 lg:mb-0 place-self-center lg:place-self-start">
