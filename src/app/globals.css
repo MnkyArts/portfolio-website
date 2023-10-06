@@ -22,7 +22,6 @@ body {
 .scroll-wrapper {
   overflow :hidden;
   width: 250px;
-  display:inline-block;
   white-space: nowrap;
 }
 

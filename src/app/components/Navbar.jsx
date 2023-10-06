@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav style={{borderBottomWidth: navBorderWidth, borderBottomColor: navBorderColor}} className="fixed top-0 left-0 right-0 z-20 backdrop-blur-md">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-52 py-4">
+      <div className="flex flex-wrap items-center justify-between mx-auto lg:px-52 py-4">
         <Link
           href={"/"}
           className="flex items-center text-3xl text-white font-semibold"
@@ -43,9 +43,9 @@ const Navbar = () => {
             width={75}
             height={75}
           />
-          <h1>LIAM ROBINSON</h1>
+          <h1 className="hidden lg:block">LIAM ROBINSON</h1>
         </Link>
-        <div className="hidden lg:block flex scroll-wrapper bg-[rgba(255,255,255,0.1)] rounded-full px-5 py-2 text-white text-sm"><div className="scroll-container"><p className="scroll-text">AVAILABLE FOR FREELANCE WORK</p><p className="scroll-text">AVAILABLE FOR FREELANCE WORK</p></div></div>
+        <div className="hidden lg:inline-block flex scroll-wrapper bg-[rgba(255,255,255,0.1)] rounded-full px-5 py-2 text-white text-sm"><div className="scroll-container"><p className="scroll-text">AVAILABLE FOR FREELANCE WORK</p><p className="scroll-text">AVAILABLE FOR FREELANCE WORK</p></div></div>
         <div className="block md:hidden">
           {!menuOpen ? (
             <button
