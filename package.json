@@ -12,10 +12,15 @@
     "@heroicons/react": "^2.0.18",
     "@vercel/analytics": "^1.0.2",
     "framer-motion": "^10.16.4",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
     "next": "latest",
+    "path": "^0.12.7",
     "react": "latest",
     "react-dom": "latest",
-    "react-type-animation": "^3.1.0"
+    "react-type-animation": "^3.1.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "autoprefixer": "latest",
